@@ -12,6 +12,11 @@ export class IonStarRating {
 
   constructor() { }
   ngAfterViewInit() {
+    this.calc();
+  }
+
+  calc(){
+    this.stars = [];
     let tmp = this.valorinicial;
     for (let i = 0; i < this.numStars; i++, tmp--){
       if (tmp >= 1)
@@ -26,5 +31,6 @@ export class IonStarRating {
     //console.log(index);
     this.valorinicial = index +1;
     this.ionClick.emit(this.valorinicial);
+    this.calc();
   }
 }
