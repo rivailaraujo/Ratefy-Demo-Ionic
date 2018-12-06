@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class IonStarRating {
   @Input() numStars: number = 5;
   @Input() valorinicial: number = 4;
-  @Output() ionClick: EventEmitter <number> = new EventEmitter<numeber>();
+  @Output() ionClick: EventEmitter <number> = new EventEmitter<number>();
   stars: string[] = [];
 
   constructor() { }
@@ -31,6 +31,7 @@ export class IonStarRating {
     //console.log(index);
     this.valorinicial = index +1;
     this.ionClick.emit(this.valorinicial);
+    
     this.calc();
   }
 }

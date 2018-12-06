@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { IonStarRatingComponent } from './ion-star-rating/ion-star-rating';
+import { IonStarRating} from './ion-star-rating/ion-star-rating';
 @NgModule({
-	declarations: [IonStarRatingComponent],
+	declarations: [IonStarRating],
 	imports: [],
-	exports: [IonStarRatingComponent]
+	exports: [IonStarRating]
 })
 export class ComponentsModule {}
